@@ -15,15 +15,15 @@ fi
 sudo easy_install -ZU autopep8 
 sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 mv -f ~/vim ~/vim_old
-cd ~/ && git clone https://github.com/ma6174/vim.git
+cd ~/ && git clone https://github.com/zhangs0211/vim.git
 mv -f ~/.vim ~/.vim_old
 mv -f ~/vim ~/.vim
 mv -f ~/.vimrc ~/.vimrc_old
 mv -f ~/.vim/.vimrc ~/
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-echo "ma6174正在努力为您安装bundle程序" > ma6174
-echo "安装完毕将自动退出" >> ma6174
-echo "请耐心等待" >> ma6174
-vim ma6174 -c "BundleInstall" -c "q" -c "q"
-rm ma6174
+echo "zhangs0211在努力为您安装bundle程序" > zhangs0211
+echo "安装完毕将自动退出" >> zhangs0211
+echo "请耐心等待" >> zhangs0211
+vim zhangs0211 -c "BundleInstall" -c "q" -c "q"
+rm zhangs0211
 echo "安装完成"
