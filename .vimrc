@@ -450,6 +450,11 @@ Bundle 'The-NERD-Commenter'
 Bundle 'django_templates.vim'
 Bundle 'Django-Projects'
 
+"powerline 
+Bundle "Lokaltog/vim-powerline"
+set laststatus=2
+let g:Powerline_symbols='unicode'
+
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'djangojump'
 " ...
