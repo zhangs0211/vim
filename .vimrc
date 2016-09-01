@@ -455,6 +455,29 @@ Bundle "Lokaltog/vim-powerline"
 set laststatus=2
 let g:Powerline_symbols='unicode'
 
+"use :Gitv view git log
+Bundle "gregsexton/gitv"
+
+"ag 全局搜索代码工具
+"需要先安装ag工具  brew install the_silver_searcher
+Bundle 'rking/ag.vim'
+let g:ag_highlight=1    "高亮搜索结果
+let g:ag_working_path_mode="r"  "由工程根目录搜索
+"nmap <C-m> :Ag! ""<left>.
+nmap <C-m> :Ag! ""<left><C-R>=expand("cword")<CR>
+"nmap <C-n> :Ag! <C-R>=expand("cword")<CR><CR>
+"in Quickfix window key
+"e    to open file and close the quickfix window
+"o    to open (same as enter)
+"go   to preview file (open but maintain focus on ag.vim results)
+"t    to open in new tab
+"T    to open in new tab silently
+"h    to open in horizontal split
+"H    to open in horizontal split silently
+"v    to open in vertical split
+"gv   to open in vertical split silently
+"q    to close the quickfix window
+
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'djangojump'
 " ...
