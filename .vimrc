@@ -464,8 +464,8 @@ Bundle 'rking/ag.vim'
 let g:ag_highlight=1    "高亮搜索结果
 let g:ag_working_path_mode="r"  "由工程根目录搜索
 "nmap <C-m> :Ag! ""<left>.
-nmap <C-m> :Ag! ""<left><C-R>=expand("cword")<CR>
-"nmap <C-n> :Ag! <C-R>=expand("cword")<CR><CR>
+nmap <C-m> :Ag! ""<left><C-R>=expand("<cword>")<CR>
+"nmap <C-n> :Ag! <C-R>=expand("<cword>")<CR><CR>
 "in Quickfix window key
 "e    to open file and close the quickfix window
 "o    to open (same as enter)
